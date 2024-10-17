@@ -1,0 +1,62 @@
+.ejkim__main {
+  width: 100vw;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content__one {
+  width: 95%;
+  display: flex;
+  background-color: white;
+}
+
+.ejkimfix {
+  width: 333px;
+  height: 500px;
+  margin-right: 50px;
+}
+
+.ejkimfix img {
+  width: 333px;
+  height: 500px;
+}
+
+.introduce {
+  width: calc(100% - 50px);
+  display: table;
+  table-layout: fixed;
+}
+
+.introduce h1 {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 60px;
+  letter-spacing: 1px;
+}
+
+.introduce h2 {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 30px;
+  color: #5a736d;
+}
+
+.introduce p {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 160%;
+  margin-top: 30px;
+  text-align: justify;
+}
+
+.content__two {
+  display: flex;
+  margin-top: 40px;
+  width: 95%;
+  height: auto;
+  margin-bottom: 30px;
+}

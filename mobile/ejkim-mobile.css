@@ -1,0 +1,69 @@
+@media screen and (max-width: 768px) {
+  /** 모바일 가로, 타블렛 세로 */
+  .content__two {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /** 타블렛 가로, 노트북 */
+  .content__one {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .introduce h1 {
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+  }
+
+  .introduce h2 {
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #5a736d;
+  }
+
+  .introduce p {
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 160%;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .content__one {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-top: 30px;
+  }
+
+  .ejkimfix {
+    width: 260px;
+    height: 400px;
+    margin: 0;
+  }
+
+  .ejkimfix img {
+    width: 260px;
+    height: 400px;
+  }
+
+  .introduce {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    margin-top: 40px;
+  }
+}

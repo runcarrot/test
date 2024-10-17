@@ -1,0 +1,38 @@
+@media screen and (max-width: 1280px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100% - 10px);
+    height: 80px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    align-items: center;
+  }
+
+  .index__main {
+    width: 100%;
+  }
+
+  .nav__logobox img {
+    width: 150px;
+    height: 38px;
+    align-items: center;
+  }
+  .nav__menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav__menu li {
+    padding: 4px 10px;
+  }
+
+  li {
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 15px;
+    font-weight: bold;
+    font-weight: 100;
+    letter-spacing: 1px;
+    align-items: center;
+  }
+}

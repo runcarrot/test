@@ -1,0 +1,30 @@
+@media screen and (max-width: 1280px) {
+  .meliora__main {
+    height: calc(100vh - 80px);
+  }
+
+  h1 {
+    font-family: "butler", serif;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: white;
+    text-align: center;
+  }
+
+  .index__mail {
+    margin-top: 20px;
+    width: 250px;
+    height: 65px;
+    font-family: "basic sans", serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(9, 78, 49);
+    letter-spacing: 3px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+  }
+}

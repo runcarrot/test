@@ -1,0 +1,87 @@
+@media screen and (max-width: 768px) {
+  /** 모바일 세로 */
+  .info__main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info__main__content__1 {
+    width: calc(100vw - 40px);
+    height: 300px;
+  }
+
+  .info__main__content__1__box {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+  }
+
+  .info__main__content__1__img {
+    margin-right: 20px;
+  }
+  .info__main__content__1_text {
+    width: 100%;
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  .info__main__content__1__pin__text {
+    line-height: 30px;
+  }
+
+  .index__mail {
+    width: 200px;
+    height: 32px;
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 1px;
+    background-color: #b2d5ca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+  }
+
+  .info__main__content__2 {
+    width: calc(100vw - 40px);
+    margin-top: 80px;
+    height: 100%;
+  }
+
+  .info__main__content__2__box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 40px;
+  }
+
+  .info__main__content__2__title {
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #5a736d;
+    letter-spacing: 3px;
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .info__main__content__2__context {
+    margin-top: 20px;
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 3px;
+    line-height: 35px;
+  }
+
+  .info__main__content__2__context > p {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,38 @@
+.meliora__main {
+  height: calc(100vh - 110px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/bg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "basic sans", serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+h1 {
+  font-family: "butler", serif;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: white;
+}
+
+.index__mail {
+  margin-top: 40px;
+  width: 350px;
+  height: 80px;
+  font-family: "basic sans", serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(9, 78, 49);
+  letter-spacing: 3px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}

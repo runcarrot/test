@@ -1,0 +1,25 @@
+@media screen and (max-width: 480px) {
+  /** 모바일 세로 */
+}
+
+@media screen and (max-width: 768px) {
+  /** 모바일 가로, 타블렛 세로 */
+  .table__one__box,
+  .table__two__box,
+  .table__three__box {
+    width: 100%;
+    height: auto;
+  }
+
+  .table__two__box__invisible {
+    display: none;
+  }
+
+  .table__three__box {
+    margin-top: 40px;
+  }
+
+  .table__three__box__li {
+    margin-top: 20px;
+  }
+}
