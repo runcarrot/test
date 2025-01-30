@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MELIORA PSYCHOLOGICAL SERVICE Inc.</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mobile/style-mobile.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./mobile/index-mobile.css" />
+    <link rel="stylesheet" href="./css/email.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <nav class="navbar">
+        <div class="nav__logobox"><img src="./img/logo.jpg" /></div>
+        <ul class="nav__menu">
+          <li><a href="./index.html">MELIORA</a></li>
+          <li><a href="./ejkim.html">E.J. Kim</a></li>
+          <li><a href="./info.html">Info</a></li>
+          <li><a href="./kor/index.html">한국어</a></li>
+        </ul>
+      </nav>
+      <main class="meliora__main">
+        <div class="container">
+          <h2>Request Appointment</h2>
+          <form id="contact-form" method="POST">
+            <div class="form-group">
+              <label for="email">E mail</label>
+              <input type="email" id="email" name="email" placeholder="example@email.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="홍길동" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Text</label>
+              <textarea id="message" name="message" placeholder="문의 내용을 입력해주세요." required></textarea>
+            </div>
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </main>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: "MOqwgJ9zwAmMi3r1R",
+        });
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+          event.preventDefault();
+          // these IDs from the previous steps
+          emailjs.sendForm("service_rx2l5hj", "template_12wbkfg", this).then(
+            () => {
+              console.log("SUCCESS!");
+              alert("Thank you for your requst appointment");
+            },
+            (error) => {
+              console.log("FAILED...", error);
+              alert("Failed to send e-mail");
+            }
+          );
+        });
+      };
+    </script>
+  </body>
+</html>
